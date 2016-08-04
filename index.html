@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olivo Villas | Vacation Destinations</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main768.css">
+    <link rel="stylesheet" type="text/css" href="css/main1200.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navBar">
+              <!-- <img src="images/logo.png" alt="" class="logo"> -->
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id ="introCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#introCarousel" data-to-slide-to="0" class="active"></li>
+    <li data-target="#introCarousel" data-to-slide-to="1"></li>
+    <li data-target="#introCarousel" data-to-slide-to="2"></li>
+  </ol>
+  <div class="container-fluid text-center headerContent">
+      <h1 class="text-vertical-center">Olivo Villas</h1>
+      <p>Quality | Serenity | Tranquility</p>
+      <!-- Villa Scheduler -->
+      <div class="container-fluid scheduler">
+          <div class="row-fluid">
+              <!-- Properties -->
+              <div class="col-xs-12 col-lg-3 schedDropdown">
+                  <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">All Properties<span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Toscano Villa<span class="roomSpan">1 BR | 1 BA</span></a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dell'Orso Villa<span class="roomSpan">2 BR | 1 BA</span></a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Di Valletta Villa<span class="roomSpan">3 BR | 2 BA</span></a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Santorini Villa<span class="roomSpan">4 BR | 2 BA</span></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <!-- Arrival -->
+              <div class="col-xs-6 col-lg-3 schedDropdown">
+                  <div class="form-group">
+                      <div class='input-group date' id='arrivalDate'>
+                          <input type='text' class="form-control" value="Arrival" />
+                          <span class="input-group-addon calendarBtn">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+              <!-- Departure -->
+              <div class="col-xs-6 col-lg-3 schedDropdown">
+                  <div class="form-group">
+                      <div class='input-group date' id='departDate'>
+                          <input type='text' class="form-control" value="Departure" />
+                          <span class="input-group-addon calendarBtn">
+                              <span class="glyphicon glyphicon-calendar"></span>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+              <!-- Guests -->
+              <div class="col-xs-offset-3 col-xs-4 col-lg-2 schedDropdown">
+                <div class="clearfix hidden-lg-up"></div>
+
+                  <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-user"></span> Guests<span class="caret"></span></button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                          <li role="presentation" class="divider"></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 +</a></li>
+                      </ul>
+                  </div>
+              </div>
+
+              <!-- Book -->
+              <div class="col-xs-1 col-lg-1 schedDropdown">
+                  <div class="dropdown">
+                      <button class="btn btn-default bookBtn" type="button">Book It <span class="glyphicon glyphicon-ok"></span></button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="images/patio.jpg" alt="firstSlideMain">
+    </div>
+    <div class="item">
+      <img src="images/grass.jpg" alt="secondSlideMain">
+    </div>
+    <div class="item">
+      <img src="images/villas.jpg" alt="thirdSlideMain">
+    </div>
+  </div>
+  <a href="#introCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a href="#introCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Image Gallery -->
+    <!-- First Row -->
+    <div class="container-fluid bg-3 text-center gallery">
+        <h3>Gallery</h3>
+        <br>
+        <div class="row-fluid">
+
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Second Row -->
+    <div class="container-fluid bg-3 text-center">
+        <div class="row-fluid">
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+            <div class="col-sm-3">
+                <p>Picture</p>
+                <img src="" class="img-responsive" style="width:100%" alt="Image">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+
+    </footer>
+
+</body>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</html> -->

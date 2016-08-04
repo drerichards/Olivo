@@ -1,0 +1,118 @@
+@media only screen and (min-device-width: 320px) {
+    html, body {
+        margin: 0;
+        position: relative;
+        font-size: 12px;
+        font-style: normal;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        overflow-x: hidden;
+        text-align: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: "Anke";
+    }
+    .btn {
+        border-radius: 0px;
+    }
+    a {
+        color: white;
+    }
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .navbar {
+        padding-left: 15%;
+        margin-bottom: 0;
+        border-radius: 0;
+        position: fixed;
+        width: 100%;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    .carousel {
+        position: inherit;
+    }
+    #introCarousel {
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        min-height: 750px;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    #introCarousel img{
+      width: 100%;
+    }
+    #introCarousel> .container-fluid {
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        left: 5%;
+        right: 5%;
+        /*max-width: 1175px;*/
+    }
+    #introCarousel h1 {
+        font-family: "Boho Script Drop";
+        font-size: 5em;
+        margin: auto 0;
+        font-weight: bold;
+        text-shadow: 2px 2px #492e00;
+    }
+    .scheduler{
+      position: relative;
+    }
+    .carousel-control {
+        height: 25%;
+        font-size: 1em;
+    }
+    .carousel-control.left, .carousel-control.right{
+    background: none !important;
+    filter: progid:none !important;
+    }
+    .form-group{
+      margin-bottom: 0;
+    }
+    .btn, .input-group-addon {
+      padding: 0 6px;
+    }
+    .logo {
+        float: left;
+        left: 20em;
+        top: 8em;
+        position: relative;
+        height: 175px;
+    }
+    .bg-3 {
+        position: relative;
+    }
+    .dropdown-menu, .dropdown-toggle {
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+    }
+    .schedDropdown{
+      padding: 0;
+    }
+    .form-control, .calendarBtn, .bookBtn, .dropdown-toggle {
+        border-radius: 0px;
+        height: 27px;
+    }
+    .roomSpan {
+        float: right;
+    }
+    .caret {
+        position: relative;
+        float: right;
+        top: 7px;
+    }
+    footer {
+        background-color: #f2f2f2;
+        padding: 25px;
+    }
+}

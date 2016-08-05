@@ -14,125 +14,154 @@
 
 <body>
 
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navBar">
-              <!-- <img src="images/logo.png" alt="" class="logo"> -->
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-<div id ="introCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
+
+    <div id="introCarousel" class="carousel slide" data-ride="carousel">
+        <!-- <ol class="carousel-indicators">
     <li data-target="#introCarousel" data-to-slide-to="0" class="active"></li>
     <li data-target="#introCarousel" data-to-slide-to="1"></li>
     <li data-target="#introCarousel" data-to-slide-to="2"></li>
-  </ol>
-  <div class="container-fluid text-center headerContent">
-      <h1 class="text-vertical-center">Olivo Villas</h1>
-      <p>Quality | Serenity | Tranquility</p>
-      <!-- Villa Scheduler -->
-      <div class="container-fluid scheduler">
-          <div class="row-fluid">
-              <!-- Properties -->
-              <div class="col-xs-12 col-lg-3 schedDropdown">
-                  <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">All Properties<span class="caret"></span></button>
-                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Toscano Villa<span class="roomSpan">1 BR | 1 BA</span></a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dell'Orso Villa<span class="roomSpan">2 BR | 1 BA</span></a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Di Valletta Villa<span class="roomSpan">3 BR | 2 BA</span></a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Santorini Villa<span class="roomSpan">4 BR | 2 BA</span></a></li>
-                      </ul>
-                  </div>
-              </div>
-              <!-- Arrival -->
-              <div class="col-xs-6 col-lg-3 schedDropdown">
-                  <div class="form-group">
-                      <div class='input-group date' id='arrivalDate'>
-                          <input type='text' class="form-control" value="Arrival" />
-                          <span class="input-group-addon calendarBtn">
+  </ol> -->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navBar">
+                    <!-- <img src="images/logo.png" alt="" class="logo"> -->
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid text-center headerContent">
+            <h1 class="text-vertical-center">Olivo Villas</h1>
+            <p>Quality | Serenity | Tranquility</p>
+            <!-- Villa Scheduler -->
+            <div class="container-fluid scheduler">
+                <div class="row-fluid">
+                    <!-- Properties -->
+                    <div class="col-xs-8 col-sm-3 schedDropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">All Properties<span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Toscano Villa<span class="roomSpan">1 BR | 1 BA</span></a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Dell'Orso Villa<span class="roomSpan">2 BR | 1 BA</span></a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Di Valletta Villa<span class="roomSpan">3 BR | 2 BA</span></a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Santorini Villa<span class="roomSpan">4 BR | 2 BA</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Guests -->
+                    <div class="col-xs-4 col-sm-2 schedDropdown">
+                        <div class="clearfix hidden-sm-up"></div>
+
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-user"></span> Guests<span class="caret"></span></button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
+                                <li role="presentation" class="divider"></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 +</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Arrival -->
+                    <div class="col-xs-6 col-sm-3 schedDropdown">
+                        <div class="form-group">
+                            <div class='input-group date' id='arrivalDate'>
+                                <input type='text' class="form-control" value="Arrival" />
+                                <span class="input-group-addon calendarBtn">
                                 <span class="glyphicon glyphicon-calendar"></span>
-                          </span>
-                      </div>
-                  </div>
-              </div>
-              <!-- Departure -->
-              <div class="col-xs-6 col-lg-3 schedDropdown">
-                  <div class="form-group">
-                      <div class='input-group date' id='departDate'>
-                          <input type='text' class="form-control" value="Departure" />
-                          <span class="input-group-addon calendarBtn">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Departure -->
+                    <div class="col-xs-6 col-sm-3 schedDropdown">
+                        <div class="form-group">
+                            <div class='input-group date' id='departDate'>
+                                <input type='text' class="form-control" value="Departure" />
+                                <span class="input-group-addon calendarBtn">
                               <span class="glyphicon glyphicon-calendar"></span>
-                          </span>
-                      </div>
-                  </div>
-              </div>
-              <!-- Guests -->
-              <div class="col-xs-offset-3 col-xs-4 col-lg-2 schedDropdown">
-                <div class="clearfix hidden-lg-up"></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Book -->
+                    <div class="col-xs-12 col-sm-1 schedDropdown">
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-info bookBtn" data-toggle="button">Book It <span class="glyphicon glyphicon-ok"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="images/patio.jpg" alt="firstSlideMain">
+            </div>
+            <div class="item">
+                <img src="images/grass.jpg" alt="secondSlideMain">
+            </div>
+            <div class="item">
+                <img src="images/sunset.jpg" alt="thirdSlideMain">
+            </div>
+        </div>
+        <a href="#introCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#introCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 
-                  <div class="dropdown">
-                      <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
-                          <span class="glyphicon glyphicon-user"></span> Guests<span class="caret"></span></button>
-                      <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">1</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">2</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">3</a></li>
-                          <li role="presentation" class="divider"></li>
-                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">4 +</a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <!-- Book -->
-              <div class="col-xs-1 col-lg-1 schedDropdown">
-                  <div class="dropdown">
-                      <button class="btn btn-default bookBtn" type="button">Book It <span class="glyphicon glyphicon-ok"></span></button>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="images/patio.jpg" alt="firstSlideMain">
     </div>
-    <div class="item">
-      <img src="images/grass.jpg" alt="secondSlideMain">
+
+
+    <div class="container-fluid">
+        <div class="wrapper">
+            <div class="row about-container">
+                <div class="col-xs-4 well">
+                    <div class="about-card about1">
+                        <h3>Stunning Vistas</h3>
+                        <div class="img-responsive about-image"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 well">
+                    <div class="about-card about2 bg-alt">
+                        <h3>Award Winning</h3>
+                        <div class="img-responsive about-image"></div>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 well">
+                    <div class="about-card about3">
+                        <h3>Unbeatable Deals</h3>
+                        <div class="img-responsive about-image"></div>
+                        <p>Sed ut perspiciatis unde omnis iste natus laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                           quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="item">
-      <img src="images/villas.jpg" alt="thirdSlideMain">
-    </div>
-  </div>
-  <a href="#introCarousel" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-  <a href="#introCarousel" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-
-</div>
-
-
-
 
 
 

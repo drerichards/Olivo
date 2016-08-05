@@ -2,23 +2,40 @@
     html, body {
         font-size: 14px;
     }
+    .navbar {
+        font-size: 1.7em;
+        height: 20px;
+    }
     .scheduler .row-fluid {
-        margin: 0 25px;
+        margin: 0 auto;
+        max-width: 1000px;
     }
     #introCarousel h1 {
-      margin-top: 8%;
+        margin-top: 12%;
         font-size: 8em;
     }
-    .form-control, .calendarBtn, .bookBtn, .dropdown-toggle {
-        height: 25px;
-        font-size: 10px;
+    #introCarousel img {
+        min-height: 450px;
     }
-    .schedDropdown .dropdown-menu{
-      font-size: 10px;
+    .form-control, .bookBtn, .dropdown-toggle {
+        height: 33px;
+        font-size: 1em;
     }
-    .carousel-control {
-        height: 100%;
-        font-size: 2em;
+    .schedDropdown .dropdown-menu {
+        font-size: 1em;
     }
-
+    .about-container{
+      margin: 2% auto;
+    }
+    .well{
+      clear: none;
+      width: 33%;
+    }
+    .about-image{
+      margin: 0 auto;
+      height: 150px;
+      background: url('../images/mountain.jpg') no-repeat center;
+      background-size: cover;
+      width: 100%;
+    }
 }

@@ -14,12 +14,18 @@
     #introCarousel img{
       min-height: 750px;
     }
-
+    .well{
+      clear: none;
+      width: 33%;
+    }
     .about-image{
       margin: 0 auto;
       height: 400px;
-      background: url('../images/mountain.jpg') no-repeat center;
-      background-size: cover;
-      width: 100%;
+      background: url('../images/umbria.jpg');
+      background-repeat: no-repeat;
     }
+    .about-card p{
+      font-size: 16px;
+    }
+
 }

@@ -27,15 +27,22 @@
     .about-container{
       margin: 2% auto;
     }
-    .well{
-      clear: none;
-      width: 33%;
+    h3.aboutHeader{
+      font-size: 30px;
     }
     .about-image{
       margin: 0 auto;
-      height: 150px;
-      background: url('../images/mountain.jpg') no-repeat center;
+      height: 300px;
       background-size: cover;
       width: 100%;
+    }
+    .about1 .about-image{
+      background-image: url('../images/umbria.jpg');
+    }
+    .about2 .about-image{
+      background-image: url('../images/waiter.jpg');
+    }
+    .about3 .about-image{
+      background-image: url('../images/interior.jpg');
     }
 }

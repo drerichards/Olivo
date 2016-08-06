@@ -1,4 +1,9 @@
-@media only screen and (min-device-width: 320px) {
+@media only screen and (orientation: portrait) {
+      .about-card p{
+        text-align: center;
+      }
+}
+@media only screen and (min-width: 320px) {
     html, body {
         margin: 0;
         position: relative;
@@ -121,11 +126,19 @@
     .roomSpan {
         float: right;
     }
-
     .caret {
         position: relative;
         float: right;
         top: 7px;
+    }
+    .wrapper h2{
+      font-size: 20px;
+    }
+    .about-container{
+      margin-top: 0;
+    }
+    .glyphicon-leaf {
+    	color: #808000;
     }
     .well{
       margin: 3% 0 0;
@@ -140,31 +153,64 @@
       margin: 0 auto;
       height: 150px;
       background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
       width: 100%;
     }
-    .about-card h3{
+    h3.aboutHeader{
       letter-spacing: 3px;
       word-spacing: 3px;
-      font-family: "Boho Script Drop";
+      font-family: "Boho Sans";
+      font-weight: bold;
+      margin: 10px 20px;
+      font-size: 26px;
+      margin: 1% auto;
     }
     .about-card p{
-      margin: 10px 20px;
-      text-align: justify;
+      margin-top: 3px;
     }
     .about1 .about-image{
-      background: url('../images/mountain.jpg') no-repeat center center;
-      background-attachment: fixed;
+      background-image: url('../images/umbria_mobile.jpg');
+      background-position: center;
     }
     .about2 .about-image{
-      background: url('../images/waiter.jpg') no-repeat center center;
-      background-attachment: fixed;
+      background-image: url('../images/waiter_mobile.jpg');
+      background-position: center;
     }
     .about3 .about-image{
-      background: url('../images/interior.jpg') no-repeat center center;
-      background-attachment: fixed;
+      background-image: url('../images/interior_mobile.jpg');
+      background-position: center;
     }
     footer {
         background-color: #f2f2f2;
-        padding: 25px;
+        padding: 10px;
+    }
+/*horiz line*/
+    h5 {
+      display: inline-block;
+      padding: 0 10px;
+      margin: 0;
+      position: relative;
+      font-size: 2em;
+      color: #8B8378;
+    }
+    h5:before,
+    h5:after {
+      background: #8B8378;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      top: 30%;
+      width: 250%;
+    }
+
+    h5:before {
+      right: 100%;
+    }
+
+    h5:after {
+      left: 100%;
     }
 }
